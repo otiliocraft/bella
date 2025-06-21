@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Importar Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Agrega esta línea -->
+  <title>Glamour Beauty - Maquillaje Profesional</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Glamour Beauty</div>
+    <ul>
+      <li><a href="inicio" data-section="inicio" class="nav-link">Inicio</a></li>
+      <li><a href="productos" data-section="productos" class="nav-link">Productos</a></li>
+      <li><a href="tips" data-section="tips" class="nav-link">Tips</a></li>
+      <li><a href="comwntarios" data-section="comentarios" class="nav-link">Comentarios</a></li>
+      <li><a href="login" data-section="login" class="nav-link">Iniciar sesión</a></li>
+      <li><a href="informacion" data-section="Sobre Nosotros" class="nav-link">Sobre Nosotros</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="inicio" class="section">
+      <div class="hero">
+        <div class="hero-text">
+          <h1>Bienvenida a Glamour Beauty</h1>
+          <p>Tu destino para maquillaje profesional, productos exclusivos y los mejores tips de belleza.</p>
+          <button class="cta-btn" id="explora-productos">Explora Productos</button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="Maquillaje Glamour" class="hero-img">
+      </div>
+    </section>
+
+   <section id="Sobre Nosotros" class="section" style="display:none;">
+  <div class="Sobre-Nosotros-container">
+    <h1>Conoce Glamour Beauty</h1>
+    <p class="Sobre-Nosotros-intro">
+      En <strong>Glamour Beauty</strong>, cada pincelada cuenta. Somos una marca dedicada a resaltar tu belleza natural con productos de alta calidad, fórmulas seguras y tonos que inspiran confianza.
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1617530274918-fda8c3e1c228?auto=format&fit=crop&w=800&q=80" alt="Maquillaje profesional" class="sobre-nosotros-imagen">
+
+    <div class="Sobre-Nosotros-grid">
+      <!-- Misión -->
+      <div class="Sobre-Nosotros-card">
+        <h2>Misión</h2>
+        <p>Ofrecer productos de maquillaje profesionales accesibles a todas, combinando innovación, calidad y sostenibilidad.</p>
+      </div>
+      <!-- Visión -->
+      <div class="Sobre-Nosotros-card">
+        <h2>Visión</h2>
+        <p>Ser líderes en la industria de belleza con una comunidad global comprometida con la autenticidad y el empoderamiento femenino.</p>
+      </div>
+      <!-- Valores -->
+      <div class="Sobre-Nosotros-card">
+        <h2>Valores</h2>
+        <ul>
+          <li>✨ Calidad y profesionalismo</li>
+          <li>🌟 Innovación constante</li>
+          <li>💖 Empatía y conexión con nuestros clientes</li>
+          <li>🌱 Compromiso ambiental</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="sobre-nosotros-final">
+      Únete a nuestra comunidad y descubre cómo podemos ayudarte a sentirte increíble cada día. ¡Porque tú eres lo más glamuroso!
+    </p>
+    <h2 style="margin-top: 40px;">Nuestro Equipo</h2>
+<div class="equipo-grid">
+  <div class="equipo-card">
+    <div class="equipo-categoria">Desarrollador web y programador</div>
+    <div class="equipo-info">
+      <h3>Otilio Guadalupe Villarreal MAteo</h3>
+      <p><strong>Edad:</strong> 17 años</p>
+      <p><strong>Aportación:</strong> Diseño de interfaz intuitiva y experiencia de usuario.</p>
+    </div>
+  </div>
+  <div class="equipo-card">
+    <div class="equipo-categoria">Desarrollador de bases de datos</div>
+    <div class="equipo-info">
+      <h3>Jose Martin Aquino Garcia</h3>
+      <p><strong>Edad:</strong> 17 años</p>
+      <p><strong>Aportación:</strong> Implementación del sistema de base de datos de registro de usuarios.</p>
+    </div>
+  </div>
+  <div class="equipo-card">
+    <div class="equipo-categoria">Contenido y Marketing</div>
+    <div class="equipo-info">
+      <h3>Yeimi del Mar Lemus Garcia</h3>
+      <p><strong>Edad:</strong> 26 años</p>
+      <p><strong>Aportación:</strong> Redacción de tips de belleza y guías visuales de productos.</p>
+    </div>
+  </div>
+  <div class="equipo-card">
+    <div class="equipo-categoria">admistrador de Empresa </div>
+    <div class="equipo-info">
+      <h3>Juan de Dios Morales Ramos</h3>
+      <p><strong>Edad:</strong> 17 años</p>
+      <p><strong>Aportación:</strong> ayuda en la adminetrador economigo para la web.</p>
+    </div>
+  </div>
+  <div class="equipo-card">
+    <div class="equipo-categoria">Gestión de Proyecto</div>
+    <div class="equipo-info">
+      <h3>Yuridia Joselin Villasis Felix</h3>
+      <p><strong>Edad:</strong> 17 años</p>
+      <p><strong>Aportación:</strong> Supervisión general del desarrollo y gestión de recursos.</p>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+    <section id="productos" class="section" style="display:none;">
+      <h1>Nuestros Productos</h1>
+      <div class="productos-grid" id="productos-grid"></div>
+      <div id="admin-productos" style="display:none;">
+        <h2>Agregar producto</h2>
+        <form id="form-agregar-producto">
+          <input type="text" id="nuevo-nombre" placeholder="Nombre" required>
+          <input type="text" id="nuevo-descripcion" placeholder="Descripción" required>
+          <input type="url" id="nuevo-imagen" placeholder="URL de imagen" required>
+          <button type="submit">Agregar</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="tips" class="section" style="display:none;">
+      <h1>Tips de Maquillaje</h1>
+      <div class="tips-list" id="tips-list"></div>
+    </section>
+
+    <section id="login" class="section" style="display:none;">
+      <h1>Iniciar sesión</h1>
+      <form id="login-form" autocomplete="off">
+        <label for="login-usuario">Usuario:</label>
+        <input type="text" id="login-usuario" required>
+        <label for="login-password">Contraseña:</label>
+        <div style="position:relative;">
+          <input type="password" id="login-password" required>
+          <button type="button" id="toggle-login-password" style="position:absolute; right:5px; top:5px;">👁️</button>
+        </div>
+        <button type="submit">Entrar</button>
+        <div style="margin-top: 12px; text-align: center;">
+          <a href="#" id="registrate-link">Registrarte</a> |
+          <a href="#" id="olvide-link">¿Olvidaste tu contraseña?</a>
+        </div>
+      </form>
+      <div id="login-error" class="alert error" style="display:none;">
+        Usuario o contraseña incorrectos.
+      </div>
+    </section>
+
+    <section id="comentarios" class="section" style="display:none;">
+      <h1>Deja tu comentario</h1>
+      <form id="comentario-form" autocomplete="off">
+        <label for="comentario-nombre">Nombre:</label>
+        <input type="text" id="comentario-nombre" required>
+        <label for="comentario-texto">Comentario:</label>
+        <textarea id="comentario-texto" required></textarea>
+        <button type="submit">Publicar</button>
+      </form>
+    </section>
+
+    <section id="info-usuario" class="section" style="display:none;">
+      <h2>Mi perfil</h2>
+      <ul id="datos-usuario"></ul>
+      <button id="logout-btn">Cerrar sesión</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Glamour Beauty. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Modal de registro -->
+  <div id="modal-registro" class="modal" style="display:none;">
+    <div class="modal-content registro-horizontal">
+      <span class="close" id="cerrar-modal">&times;</span>
+      <form id="registro-form" class="registro-form-horizontal">
+        <div class="registro-col">
+          <h2><span style="color:#c2185b;">Registro</span> de usuario</h2>
+          <div class="input-group">
+            <label for="reg-nombre">Nombre completo</label>
+            <input type="text" id="reg-nombre" required>
+            <div id="error-nombre" class="input-error"></div>
+          </div>
+          <div class="input-group">
+            <label for="reg-fecha"><span class="icon">📅</span> Fecha de nacimiento</label>
+            <input type="date" id="reg-fecha" required>
+          </div>
+          <div class="input-group">
+            <label for="reg-edad"><span class="icon">🎂</span> Edad</label>
+            <input type="number" id="reg-edad" min="1" required>
+          </div>
+          <div class="input-group">
+            <label for="reg-usuario">Usuario</label>
+            <input type="text" id="reg-usuario" required>
+            <div id="error-usuario" class="input-error"></div>
+          </div>
+        </div>
+        <div class="registro-col">
+          <div class="input-group">
+            <label for="reg-password"><span class="icon">🔒</span> Contraseña</label>
+            <div class="input-password">
+              <input type="password" id="reg-password" required>
+              <button type="button" id="toggle-reg-password" class="toggle-eye">👁️</button>
+            </div>
+            <ul class="password-condiciones" id="password-condiciones">
+              <li id="cond-length">Al menos 8 caracteres</li>
+              <li id="cond-mayus">Una letra mayúscula</li>
+              <li id="cond-minus">Una letra minúscula</li>
+              <li id="cond-num">Un número</li>
+              <li id="cond-symbol">Un símbolo</li>
+            </ul>
+            <div id="password-error-message" class="input-error"></div>
+          </div>
+          <div class="input-group">
+            <label for="reg-password2"><span class="icon">🔒</span> Confirmar contraseña</label>
+            <div class="input-password">
+              <input type="password" id="reg-password2" required>
+              <button type="button" id="toggle-reg-password2" class="toggle-eye">👁️</button>
+            </div>
+            <div id="error-confirmacion" class="input-error"></div>
+          </div>
+          <div class="input-group">
+            <label for="pregunta1"><span class="icon">❓</span> Pregunta de seguridad 1</label>
+            <select id="pregunta1" required>
+              <option value="">Selecciona una pregunta</option>
+              <option value="¿Cuál es el nombre de tu primera mascota?">¿Cuál es el nombre de tu primera mascota?</option>
+              <option value="¿En qué ciudad naciste?">¿En qué ciudad naciste?</option>
+              <option value="¿Cuál es tu comida favorita?">¿Cuál es tu comida favorita?</option>
+              <option value="¿Cómo se llama tu mejor amigo de la infancia?">¿Cómo se llama tu mejor amigo de la infancia?</option>
+            </select>
+            <input type="text" id="respuesta1" placeholder="Respuesta" required>
+          </div>
+          <div class="input-group">
+            <label for="pregunta2"><span class="icon">❓</span> Pregunta de seguridad 2</label>
+            <select id="pregunta2" required>
+              <option value="">Selecciona una pregunta</option>
+              <option value="¿Cuál es el nombre de tu primera mascota?">¿Cuál es el nombre de tu primera mascota?</option>
+              <option value="¿En qué ciudad naciste?">¿En qué ciudad naciste?</option>
+              <option value="¿Cuál es tu comida favorita?">¿Cuál es tu comida favorita?</option>
+              <option value="¿Cómo se llama tu mejor amigo de la infancia?">¿Cómo se llama tu mejor amigo de la infancia?</option>
+            </select>
+            <input type="text" id="respuesta2" placeholder="Respuesta" required>
+          </div>
+          <button type="submit" class="btn-registro">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal de recuperación de contraseña -->
+  <div id="modal-recuperar" class="modal" style="display:none;">
+    <div class="modal-content registro-horizontal">
+      <span class="close" id="cerrar-modal-recuperar">&times;</span>
+      <form id="recuperar-form" class="registro-form-horizontal">
+        <div class="registro-col">
+          <h2><span style="color:#c2185b;">Recuperar</span> contraseña</h2>
+          <div class="input-group">
+            <label for="rec-usuario"><span class="icon">🆔</span> Usuario</label>
+            <input type="text" id="rec-usuario" required>
+          </div>
+          <button type="button" id="ver-preguntas" class="btn-registro" style="margin-top:12px;">Ver preguntas</button>
+        </div>
+        <div class="registro-col" id="preguntas-seguridad" style="display:none;">
+          <div class="input-group">
+            <label id="label-pregunta1"></label>
+            <input type="text" id="respuesta1-recuperar" placeholder="Respuesta 1" required>
+          </div>
+          <div class="input-group">
+            <label id="label-pregunta2"></label>
+            <input type="text" id="respuesta2-recuperar" placeholder="Respuesta 2" required>
+          </div>
+          <div class="input-group">
+            <label for="nueva-password"><span class="icon">🔒</span> Nueva contraseña</label>
+            <div class="input-password">
+              <input type="password" id="nueva-password" required>
+              <button type="button" id="toggle-nueva-password" class="toggle-eye">👁️</button>
+            </div>
+          </div>
+          <button type="submit" class="btn-registro">Cambiar contraseña</button>
+        </div>
+      </form>
+      
+      <div id="recuperar-error" class="alert error" style="display:none;">Datos incorrectos.</div>
+      
+    </div>
+  </div>
+<!-- Mensaje de éxito después del registro -->
+<div id="registro-exito" class="mensaje-exito" style="display: none;">
+  <div class="mensaje-contenido">
+    <p>✅ ¡Tu cuenta ha sido creada con éxito! Ahora puedes iniciar sesión.</p>
+    <span class="cerrar-mensaje">&times;</span>
+  </div>
+</div>
+<div id="recuperar-exito" style="display: none; color: #0f0;">
+  ✅ Contraseña actualizada con éxito.
+</div>
+<!-- Mensaje de éxito centrado -->
+<div id="mensaje-exito" class="mensaje-centrado" style="display: none;">
+  <div class="mensaje-contenido">
+    <p>✅ ¡Operación realizada con éxito!</p>
+    <span class="cerrar-mensaje">&times;</span>
+  </div>
+</div>
+  <script src="app.js"></script>
+
+</body>
+</html>
